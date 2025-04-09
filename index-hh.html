@@ -98,6 +98,7 @@
 
         .main {
             padding-top: 20px;
+            padding-bottom: 120px;
             border-top: 1px solid rgba(0, 0, 0, 0.1);
             border-bottom: 1px solid rgba(0, 0, 0, 0.1);
         }
@@ -150,6 +151,16 @@
             text-align: center;
         }
 
+        .idttitle h1::after {
+            content: "";
+            display: block;
+            width: 80px;
+            height: 1px;
+            background: black;
+            margin-top: 10px;
+            margin: 10px auto 0 auto;
+        }
+
         .idttitle .container-fluid {
             display: flex;
             flex-direction: column;
@@ -162,7 +173,7 @@
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;
-            align-items: center;
+            align-items: stretch;
             justify-content: center;
             width: 100%;
             margin: 0px auto 0px auto;
@@ -193,10 +204,22 @@
             min-width: 250px;
             max-width: 350px;
             flex: 0 0 calc(33.33% - 30px);
+
+            display: flex;
+            flex-direction: column;
+        }
+
+        .card-body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            flex-grow: 1;
         }
 
         .card-title {
             font-size: 20px;
+            margin-top: 10px;
+            margin-bottom: 10px;
         }
 
         .cardinfo {
@@ -204,6 +227,26 @@
             margin: 2px 0;
             color: #555;
         }
+
+        .tilbtn {
+            color: white;
+            background-color: #222;
+            font-weight: 500;
+            border-radius: 8px;
+            font-size: 14px;
+            padding: 8px 30px 8px 30px;
+            cursor: pointer;
+            text-align: center;
+            margin: auto auto 0px auto;
+            display: inline-flex;
+            align-items: center;
+            border: none;
+        }
+
+        .tilbtn:hover {
+            background-color: #525252;
+        }
+
 
 
 
@@ -276,9 +319,8 @@
                         <h5 class="card-title">손지호</h5>
                         <h6 class="cardinfo">mbti</h6>
                         <h6 class="cardinfo">백앤드 개발자</h6>
-                        <p class="card-text">창의적인 문제 해결력과 적응력을 가지고 있습니다.</p>
-                        <a href="#" class="site-link">http://hongildong.site-link</a>
-                        <a href="#" class="blog-link">blog.example.com/hongildong</a>
+                        <p class="card-text">창의적인 문제 해결력과 적응력을 가지고 있습니다.창의적인 문제 해결력과 적응력을 가지고 있습니다.창의적인 문제 해결력과 적응력을 가지고 있습니다.</p>
+                        <button class="tilbtn" onclick="location.href='...'">TIL 보기</button>
                     </div>
                 </div>
                 <div class="card">
@@ -290,8 +332,7 @@
                         <h6 class="cardinfo">mbti</h6>
                         <h6 class="cardinfo">백앤드 개발자</h6>
                         <p class="card-text">창의적인 문제 해결력과 적응력을 가지고 있습니다.</p>
-                        <a href="#" class="site-link">http://hongildong.site-link</a>
-                        <a href="#" class="blog-link">blog.example.com/hongildong</a>
+                        <button class="tilbtn" onclick="location.href='...'">TIL 보기</button>
                     </div>
                 </div>
                 <div class="card">
@@ -303,21 +344,20 @@
                         <h6 class="cardinfo">mbti</h6>
                         <h6 class="cardinfo">백앤드 개발자</h6>
                         <p class="card-text">창의적인 문제 해결력과 적응력을 가지고 있습니다.</p>
-                        <a href="#" class="site-link">http://hongildong.site-link</a>
-                        <a href="#" class="blog-link">blog.example.com/hongildong</a>
+                        <button class="tilbtn" onclick="location.href='...'">TIL 보기</button>
                     </div>
                 </div>
                 <div class="card">
                     <div class="cardimage">
-                        <img src="..." class="card-img-top" alt="프로필이미지1">
+                        <img src="https://plus.unsplash.com/premium_photo-1677678989485-c06237b623f3?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            class="card-img-top" alt="프로필이미지1">
                     </div>
                     <div class="card-body">
                         <h5 class="card-title">이효희</h5>
                         <h6 class="cardinfo">mbti</h6>
                         <h6 class="cardinfo">백앤드 개발자</h6>
-                        <p class="card-text">창의적인 문제 해결력과 적응력을 가지고 있습니다.</p>
-                        <a href="#" class="site-link">http://hongildong.site-link</a>
-                        <a href="#" class="blog-link">blog.example.com/hongildong</a>
+                        <p class="card-text">창의적인 문제 해결력과 적응력을 가지고 있습니다.창의적인 문제 해결력과 적응력을 가지고 있습니다.</p>
+                        <button class="tilbtn" onclick="location.href='...'">TIL 보기</button>
                     </div>
                 </div>
                 <div class="card">
@@ -329,8 +369,7 @@
                         <h6 class="cardinfo">mbti</h6>
                         <h6 class="cardinfo">백앤드 개발자</h6>
                         <p class="card-text">창의적인 문제 해결력과 적응력을 가지고 있습니다.</p>
-                        <a href="#" class="site-link">http://hongildong.site-link</a>
-                        <a href="#" class="blog-link">blog.example.com/hongildong</a>
+                        <button class="tilbtn" onclick="location.href='...'">TIL 보기</button>
                     </div>
                 </div>
                 <div class="card">
@@ -342,8 +381,7 @@
                         <h6 class="cardinfo">mbti</h6>
                         <h6 class="cardinfo">백앤드 개발자</h6>
                         <p class="card-text">창의적인 문제 해결력과 적응력을 가지고 있습니다.</p>
-                        <a href="#" class="site-link">http://hongildong.site-link</a>
-                        <a href="#" class="blog-link">blog.example.com/hongildong</a>
+                        <button class="tilbtn" onclick="location.href='...'">TIL 보기</button>
                     </div>
                 </div>
 
