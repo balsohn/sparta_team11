@@ -8,6 +8,8 @@
     <title>11조 미니프로젝트</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
 
     <style>
         * {
@@ -29,7 +31,7 @@
         .헤더 h1 {
             font-family: "Oswald", sans-serif;
             text-align: center;
-            font-size: 60px;
+            font-size: 70px;
             letter-spacing: -2px;
             color: #222;
             font-weight: 600;
@@ -49,7 +51,7 @@
         .navi {
             list-style: none;
             gap: 10px;
-            margin-top: 20px;
+            margin: 20px 0px 20px 0px;
             padding-left: 0;
 
             display: flex;
@@ -59,6 +61,8 @@
 
         .navibar {
             list-style: none;
+            padding-left: 0;
+
             display: flex;
             justify-content: center;
             align-items: center;
@@ -92,11 +96,40 @@
             margin: 10px auto 0px auto;
         }
 
-        .footer{
-            margin: 0px auto 0px auto;
+        .main {
+            padding-top: 20px;
+            border-top: 1px solid rgba(0, 0, 0, 0.1);
+        }
+
+        .intro {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .intro h1::after {
+            content: "";
+            display: block;
+            width: 80px;
+            height: 1px;
+            background: black;
+            margin-top: 10px;
+            margin: 10px auto 0 auto;
+        }
+
+        .teaminfo {
+            background-color: green;
             text-align: center;
         }
 
+        .teaminfo p {
+            margin: 0;
+        }
+
+        .footer {
+            margin: 0px auto 0px auto;
+            text-align: center;
+        }
     </style>
 
 </head>
@@ -121,22 +154,31 @@
     </nav>
 
     <!-- 팀소개, 팀원소개 -->
-    <main>
+    <main class="main">
         <!-- 팀 소개 -->
         <section>
-            내용내용내용
+            <div class="intro">
+                <h1>팀 소개</h1>
+            </div>
+            <div class="teaminfo">
+                <p>천지창조는 우주와 만물의 창조를 의미합니다.</p>
+                <p>아무것도 없는 상태에서 시작해보자 라는 의미를 전하고 싶습니다 </p>
+            </div>
+            <div>
+                내용내용
+            </div>
         </section>
         <!-- 팀원 소개 -->
         <section>
-            내용내용
+            내용내용내용
         </section>
     </main>
-        <!-- 푸터 -->
-        <footer>
-            <div class="footer">
-                <p>© 2025 천지창조. All rights reserved.</p>
-            </div>
-        </footer>
+    <!-- 푸터 -->
+    <footer>
+        <div class="footer">
+            <p>© 2025 천지창조. All rights reserved.</p>
+        </div>
+    </footer>
 </body>
 
 </html>
