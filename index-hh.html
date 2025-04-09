@@ -10,6 +10,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 
     <style>
+        *{
+            font-family: "Noto Sans KR", sans-serif;
+        }
+
         .헤더 {
             background-image: url("header_image.png");
             background-size: cover;
@@ -32,16 +36,33 @@
         }
 
         .헤더 h1 span {
-            font-size: 20px;
+            font-size: 22px;
             color: #444;
             word-spacing: 1px;
             letter-spacing: 2px;
-            font-family: "Noto Sans KR", sans-serif;
             font-weight: 500;
 
             display: block;
             margin-top: 5px;
         }
+
+        .navi {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+    .btn {
+        background: #2F3545;
+        font-size: 15px;
+        font-weight: bold;
+        color: white;
+        border-radius: 24px;
+        padding: 12px 28px;
+    }
 
     </style>
 
@@ -55,9 +76,9 @@
         </div>
     </header>
     <!-- 메뉴 바 -->
-    <nav>
-        <button>팀 소개</button>
-        <button>팀원 소개</button>
+    <nav class="navi">
+        <button class="btn">팀 소개</button>
+        <button class="btn">팀원 소개</button>
     </nav>
 
     <!-- 팀소개, 팀원소개 -->
