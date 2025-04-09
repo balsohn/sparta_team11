@@ -165,9 +165,23 @@
             align-items: center;
             justify-content: center;
             width: 100%;
-            margin: 30px auto 0px auto;
+            margin: 0px auto 0px auto;
             padding: 20px;
             max-width: 1200px;
+        }
+
+        .cardimage {
+            background-color: rgb(146, 146, 146);
+            height: 200px;
+            overflow: hidden;
+            border-radius: 10px 10px 0 0;
+        }
+
+        .cardimage img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
         }
 
         .card {
@@ -180,6 +194,18 @@
             max-width: 350px;
             flex: 0 0 calc(33.33% - 30px);
         }
+
+        .card-title {
+            font-size: 20px;
+        }
+
+        .cardinfo {
+            font-size: 15px;
+            margin: 2px 0;
+            color: #555;
+        }
+
+
 
         .footer {
             margin: 0px auto 0px auto;
@@ -243,71 +269,84 @@
             </div>
             <div class="idtcard">
                 <div class="card">
-                    <img src="..." class="card-img-top" alt="...">
+                    <div class="cardimage">
+                        <img src="..." class="card-img-top" alt="프로필이미지1">
+                    </div>
                     <div class="card-body">
-                        <h5 class="card-title">홍길동</h5>
-                        <h6 class="card-subtitle mb-2 text-body-secondary">mbti</h6>
-                        <h6 class="card-subtitle mb-2 text-body-secondary">백앤드 개발자</h6>
+                        <h5 class="card-title">손지호</h5>
+                        <h6 class="cardinfo">mbti</h6>
+                        <h6 class="cardinfo">백앤드 개발자</h6>
                         <p class="card-text">창의적인 문제 해결력과 적응력을 가지고 있습니다.</p>
                         <a href="#" class="site-link">http://hongildong.site-link</a>
                         <a href="#" class="blog-link">blog.example.com/hongildong</a>
                     </div>
                 </div>
                 <div class="card">
-                    <img src="..." class="card-img-top" alt="...">
+                    <div class="cardimage">
+                        <img src="..." class="card-img-top" alt="프로필이미지1">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">신현우</h5>
+                        <h6 class="cardinfo">mbti</h6>
+                        <h6 class="cardinfo">백앤드 개발자</h6>
+                        <p class="card-text">창의적인 문제 해결력과 적응력을 가지고 있습니다.</p>
+                        <a href="#" class="site-link">http://hongildong.site-link</a>
+                        <a href="#" class="blog-link">blog.example.com/hongildong</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="cardimage">
+                        <img src="..." class="card-img-top" alt="프로필이미지1">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">이승은</h5>
+                        <h6 class="cardinfo">mbti</h6>
+                        <h6 class="cardinfo">백앤드 개발자</h6>
+                        <p class="card-text">창의적인 문제 해결력과 적응력을 가지고 있습니다.</p>
+                        <a href="#" class="site-link">http://hongildong.site-link</a>
+                        <a href="#" class="blog-link">blog.example.com/hongildong</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="cardimage">
+                        <img src="..." class="card-img-top" alt="프로필이미지1">
+                    </div>
                     <div class="card-body">
                         <h5 class="card-title">이효희</h5>
-                        <h6 class="card-subtitle mb-2 text-body-secondary">mbti</h6>
-                        <h6 class="card-subtitle mb-2 text-body-secondary">백앤드 개발자</h6>
+                        <h6 class="cardinfo">mbti</h6>
+                        <h6 class="cardinfo">백앤드 개발자</h6>
                         <p class="card-text">창의적인 문제 해결력과 적응력을 가지고 있습니다.</p>
                         <a href="#" class="site-link">http://hongildong.site-link</a>
                         <a href="#" class="blog-link">blog.example.com/hongildong</a>
                     </div>
                 </div>
                 <div class="card">
-                    <img src="..." class="card-img-top" alt="...">
+                    <div class="cardimage">
+                        <img src="..." class="card-img-top" alt="프로필이미지1">
+                    </div>
                     <div class="card-body">
-                        <h5 class="card-title">홍길동</h5>
-                        <h6 class="card-subtitle mb-2 text-body-secondary">mbti</h6>
-                        <h6 class="card-subtitle mb-2 text-body-secondary">백앤드 개발자</h6>
+                        <h5 class="card-title">정승원</h5>
+                        <h6 class="cardinfo">mbti</h6>
+                        <h6 class="cardinfo">백앤드 개발자</h6>
                         <p class="card-text">창의적인 문제 해결력과 적응력을 가지고 있습니다.</p>
                         <a href="#" class="site-link">http://hongildong.site-link</a>
                         <a href="#" class="blog-link">blog.example.com/hongildong</a>
                     </div>
                 </div>
                 <div class="card">
-                    <img src="..." class="card-img-top" alt="...">
+                    <div class="cardimage">
+                        <img src="..." class="card-img-top" alt="프로필이미지1">
+                    </div>
                     <div class="card-body">
-                        <h5 class="card-title">홍길동</h5>
-                        <h6 class="card-subtitle mb-2 text-body-secondary">mbti</h6>
-                        <h6 class="card-subtitle mb-2 text-body-secondary">백앤드 개발자</h6>
+                        <h5 class="card-title">이세희</h5>
+                        <h6 class="cardinfo">mbti</h6>
+                        <h6 class="cardinfo">백앤드 개발자</h6>
                         <p class="card-text">창의적인 문제 해결력과 적응력을 가지고 있습니다.</p>
                         <a href="#" class="site-link">http://hongildong.site-link</a>
                         <a href="#" class="blog-link">blog.example.com/hongildong</a>
                     </div>
                 </div>
-                <div class="card">
-                    <img src="..." class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">홍길동</h5>
-                        <h6 class="card-subtitle mb-2 text-body-secondary">mbti</h6>
-                        <h6 class="card-subtitle mb-2 text-body-secondary">백앤드 개발자</h6>
-                        <p class="card-text">창의적인 문제 해결력과 적응력을 가지고 있습니다.</p>
-                        <a href="#" class="site-link">http://hongildong.site-link</a>
-                        <a href="#" class="blog-link">blog.example.com/hongildong</a>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="..." class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">홍길동</h5>
-                        <h6 class="card-subtitle mb-2 text-body-secondary">mbti</h6>
-                        <h6 class="card-subtitle mb-2 text-body-secondary">백앤드 개발자</h6>
-                        <p class="card-text">창의적인 문제 해결력과 적응력을 가지고 있습니다.</p>
-                        <a href="#" class="site-link">http://hongildong.site-link</a>
-                        <a href="#" class="blog-link">blog.example.com/hongildong</a>
-                    </div>
-                </div>
+
             </div>
 
         </section>
