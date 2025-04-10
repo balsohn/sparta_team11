@@ -46,7 +46,7 @@
             display: block;
             margin-top: 5px;
         }
-
+        
         /* 메뉴 바 스타일 */
         .navi {
             list-style: none;
@@ -140,7 +140,7 @@
         #section2 {
             display: none;
         }
-
+        
         /* 팀원 소개 제목 스타일 - 팀 소개와 일치하도록 수정 */
         .member-intro {
             display: flex;
@@ -185,6 +185,17 @@
             display: block;
         }
 
+        .card {
+            margin: 15px;
+            padding: 10px;
+            box-shadow: 0px 0px 3px 0px black;
+            border-radius: 10px;
+            width: calc(33.33% - 30px);
+            min-width: 250px;
+            max-width: 350px;
+            flex: 0 0 calc(33.33% - 30px);
+        }
+
         .card-title {
             font-size: 20px;
         }
@@ -195,143 +206,10 @@
             color: #555;
         }
 
-        /* 카드 스타일 수정 */
-        .card {
-            margin: 15px;
-            padding: 0;
-            /* 패딩 제거 */
-            box-shadow: 0px 0px 3px 0px black;
-            border-radius: 10px;
-            width: calc(33.33% - 30px);
-            min-width: 250px;
-            max-width: 350px;
-            flex: 0 0 calc(33.33% - 30px);
-            position: relative;
-            /* 상대 위치 설정 */
-            overflow: hidden;
-            /* 넘치는 내용 숨김 */
-        }
-
-        /* 카드 이미지를 전체 카드 크기로 */
-        .cardimage {
-            background-color: rgb(146, 146, 146);
-            height: 300px;
-            /* 카드 높이 증가 */
-            width: 100%;
-            border-radius: 10px;
-            /* 전체 둥글게 */
-            overflow: hidden;
-        }
-
-        /* 카드 본문 정보는 기본적으로 숨김 */
-        .card-body {
-            display: none;
-        }
-
-        /* 호버 오버레이 */
-        .card-overlay {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0, 0, 0, 0.8);
-            color: white;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            opacity: 0;
-            transition: opacity 0.3s ease;
-
-            text-align: center;
-            border-radius: 10px;
-        }
-
-        /* 호버 시 오버레이 표시 */
-        .card:hover .card-overlay {
-            opacity: 1;
-        }
-
-        /* 오버레이 내부 스타일 */
-        .overlay-content {
-            width: 100%;
-        }
-
-        .overlay-content h4 {
-            margin-bottom: 10px;
-            font-size: 22px;
-        }
-
-        .overlay-content p {
-            margin: 5px 0;
-            font-size: 14px;
-        }
-
-        .overlay-content .overlay-links {
-            margin-top: 15px;
-        }
-
-        .overlay-content>h4 {
-            margin-top: 0;
-        }
-
-        .overlay-content .overlay-links a {
-            color: #fff;
-            text-decoration: underline;
-            display: block;
-            margin: 5px 0;
-            font-size: 14px;
-        }
-
         /* 푸터 스타일 */
         .footer {
             margin: 0px auto 0px auto;
             text-align: center;
-        }
-
-        .mycard {
-
-            text-align: center;
-            margin: 300px auto 0px auto;
-            font-size: 30px;
-        }
-
-        .text {
-            margin: 300px auto 0px auto;
-            text-align: center;
-        }
-
-        .idttitle {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            width: 100%;
-            margin: auto;
-            padding: 20px;
-            color: black;
-            text-align: center;
-        }
-
-        .idttitle .container-fluid {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            width: 100%;
-        }
-
-        .idtcard {
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            align-items: center;
-            justify-content: center;
-            width: 100%;
-            margin: 30px auto 0px auto;
-            padding: 20px;
-            max-width: 1200px;
         }
     </style>
 
@@ -389,7 +267,6 @@
         <div>
             <h1>TEAM ELEVEN<span>천지창조</span></h1>
         </div>
-
     </header>
     <!-- 메뉴 바 -->
     <nav class="navi">
@@ -425,26 +302,12 @@
             <div class="member-intro">
                 <h1>팀원 소개</h1>
             </div>
-
+            
             <div class="idtcard">
                 <div class="card">
                     <div class="cardimage">
                         <img src="..." class="card-img-top" alt="프로필이미지1">
                     </div>
-                    <!-- 호버 시 나타날 오버레이 -->
-                    <div class="card-overlay">
-                        <div class="overlay-content">
-                            <h4>손지호</h4>
-                            <p>MBTI: ISFJ</p>
-                            <p>백엔드 개발자</p>
-                            <p>창의적인 문제 해결력과 적응력을 가지고 있습니다.ddddddddddddddddddddddddddddd</p>
-                            <div class="overlay-links">
-                                <a href="http://balsohn.tistory.com/" class="site-link">http://balsohn.tistory.com/</a>
-                                <a href="#" class="blog-link">blog.example.com/hongildong</a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- 원래 카드 본문 - 화면에는 표시되지 않음 -->
                     <div class="card-body">
                         <h5 class="card-title">손지호</h5>
                         <h6 class="cardinfo">mbti</h6>
@@ -458,22 +321,8 @@
                     <div class="cardimage">
                         <img src="..." class="card-img-top" alt="프로필이미지1">
                     </div>
-                    <!-- 호버 시 나타날 오버레이 -->
-                    <div class="card-overlay">
-                        <div class="overlay-content">
-                            <h4>손지호</h4>
-                            <p>MBTI: ENFP</p>
-                            <p>백엔드 개발자</p>
-                            <p>창의적인 문제 해결력과 적응력을 가지고 있습니다.ddddddddddddddddddddddddddddd</p>
-                            <div class="overlay-links">
-                                <a href="#" class="site-link">http://hongildong.site-link</a>
-                                <a href="#" class="blog-link">blog.example.com/hongildong</a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- 원래 카드 본문 - 화면에는 표시되지 않음 -->
                     <div class="card-body">
-                        <h5 class="card-title">손지호</h5>
+                        <h5 class="card-title">신현우</h5>
                         <h6 class="cardinfo">mbti</h6>
                         <h6 class="cardinfo">백앤드 개발자</h6>
                         <p class="card-text">창의적인 문제 해결력과 적응력을 가지고 있습니다.</p>
@@ -485,22 +334,8 @@
                     <div class="cardimage">
                         <img src="..." class="card-img-top" alt="프로필이미지1">
                     </div>
-                    <!-- 호버 시 나타날 오버레이 -->
-                    <div class="card-overlay">
-                        <div class="overlay-content">
-                            <h4>손지호</h4>
-                            <p>MBTI: ENFP</p>
-                            <p>백엔드 개발자</p>
-                            <p>창의적인 문제 해결력과 적응력을 가지고 있습니다.ddddddddddddddddddddddddddddd</p>
-                            <div class="overlay-links">
-                                <a href="#" class="site-link">http://hongildong.site-link</a>
-                                <a href="#" class="blog-link">blog.example.com/hongildong</a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- 원래 카드 본문 - 화면에는 표시되지 않음 -->
                     <div class="card-body">
-                        <h5 class="card-title">손지호</h5>
+                        <h5 class="card-title">이승은</h5>
                         <h6 class="cardinfo">mbti</h6>
                         <h6 class="cardinfo">백앤드 개발자</h6>
                         <p class="card-text">창의적인 문제 해결력과 적응력을 가지고 있습니다.</p>
@@ -512,22 +347,8 @@
                     <div class="cardimage">
                         <img src="..." class="card-img-top" alt="프로필이미지1">
                     </div>
-                    <!-- 호버 시 나타날 오버레이 -->
-                    <div class="card-overlay">
-                        <div class="overlay-content">
-                            <h4>손지호</h4>
-                            <p>MBTI: ENFP</p>
-                            <p>백엔드 개발자</p>
-                            <p>창의적인 문제 해결력과 적응력을 가지고 있습니다.ddddddddddddddddddddddddddddd</p>
-                            <div class="overlay-links">
-                                <a href="#" class="site-link">http://hongildong.site-link</a>
-                                <a href="#" class="blog-link">blog.example.com/hongildong</a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- 원래 카드 본문 - 화면에는 표시되지 않음 -->
                     <div class="card-body">
-                        <h5 class="card-title">손지호</h5>
+                        <h5 class="card-title">이효희</h5>
                         <h6 class="cardinfo">mbti</h6>
                         <h6 class="cardinfo">백앤드 개발자</h6>
                         <p class="card-text">창의적인 문제 해결력과 적응력을 가지고 있습니다.</p>
@@ -539,22 +360,8 @@
                     <div class="cardimage">
                         <img src="..." class="card-img-top" alt="프로필이미지1">
                     </div>
-                    <!-- 호버 시 나타날 오버레이 -->
-                    <div class="card-overlay">
-                        <div class="overlay-content">
-                            <h4>손지호</h4>
-                            <p>MBTI: ENFP</p>
-                            <p>백엔드 개발자</p>
-                            <p>창의적인 문제 해결력과 적응력을 가지고 있습니다.ddddddddddddddddddddddddddddd</p>
-                            <div class="overlay-links">
-                                <a href="#" class="site-link">http://hongildong.site-link</a>
-                                <a href="#" class="blog-link">blog.example.com/hongildong</a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- 원래 카드 본문 - 화면에는 표시되지 않음 -->
                     <div class="card-body">
-                        <h5 class="card-title">손지호</h5>
+                        <h5 class="card-title">정승원</h5>
                         <h6 class="cardinfo">mbti</h6>
                         <h6 class="cardinfo">백앤드 개발자</h6>
                         <p class="card-text">창의적인 문제 해결력과 적응력을 가지고 있습니다.</p>
@@ -566,22 +373,8 @@
                     <div class="cardimage">
                         <img src="..." class="card-img-top" alt="프로필이미지1">
                     </div>
-                    <!-- 호버 시 나타날 오버레이 -->
-                    <div class="card-overlay">
-                        <div class="overlay-content">
-                            <h4>손지호</h4>
-                            <p>MBTI: ENFP</p>
-                            <p>백엔드 개발자</p>
-                            <p>창의적인 문제 해결력과 적응력을 가지고 있습니다.ddddddddddddddddddddddddddddd</p>
-                            <div class="overlay-links">
-                                <a href="#" class="site-link">http://hongildong.site-link</a>
-                                <a href="#" class="blog-link">blog.example.com/hongildong</a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- 원래 카드 본문 - 화면에는 표시되지 않음 -->
                     <div class="card-body">
-                        <h5 class="card-title">손지호</h5>
+                        <h5 class="card-title">이세희</h5>
                         <h6 class="cardinfo">mbti</h6>
                         <h6 class="cardinfo">백앤드 개발자</h6>
                         <p class="card-text">창의적인 문제 해결력과 적응력을 가지고 있습니다.</p>
